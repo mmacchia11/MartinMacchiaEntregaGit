@@ -228,56 +228,86 @@ a {
 /* CONTACTO */
 
 #main-form {
+  background: linear-gradient(to right, #bf6b84, #6c5c7b);
   height: 100vh;
-}
-
-#main-form h1 {
-  font-family: "logo";
-  margin: 30px 0;
-}
-
-#main-form {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin-top: 30px 0;
-}
-
-#main-form form {
-  display: flex;
   flex-direction: column;
-  width: 500px;
-  margin-bottom: 20px;
 }
 
-#main-form form label {
-  font-size: 20px;
+#main-form .titulo-contacto {
+  text-align: center;
+  font-weight: 700;
+}
+form {
+  background: #fff;
+  padding: 40px 0;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
 }
 
-#main-form form input {
+.form {
   width: 100%;
-  background: none;
-  color: #706c6c;
-  font-size: 20px;
-  padding: 20px;
-  border: none;
-  outline: none;
-  border-bottom: 1px solid black;
-  font-family: "roboto";
+  margin: auto;
 }
 
-#main-form form .contacto-btn {
-  padding: 10px;
-  background-color: #f3a56e;
-  border-radius: 8px;
-  cursor: pointer;
-  border-color: #e2a87e;
-  font-family: "botones", "Arial";
-  font-size: 15px;
-  color: #fff;
-  margin-left: 20px;
-  margin-top: 5px;
+.form .grupo {
+  position: relative;
+  margin: 45px;
 }
+
+input {
+  background: none;
+  color: #c6c6c6;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #49454567;
+}
+
+input:focus{
+  outline: none;
+  color: #5e5d5d;
+}
+
+label{
+  color:#49454567;
+  font-size:16px;
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+  top:10px;
+  transition: 0.5s ease-in-out all;
+  pointer-events: none;
+}
+
+input:focus~label{
+  top:-14px;
+  font-size: 12px;
+  color: #345d7e ;
+}
+
+.btn-contacto{
+  font-size: 16px;
+  font-family: 'roboto';
+  background-color:#f3a56e;
+  border: none;
+  display: block;
+  width:80%;
+  margin: 10px auto;
+  color: #fff;
+  height: 40px;
+  cursor:pointer;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
 
 /* CONTACTO END */
 
