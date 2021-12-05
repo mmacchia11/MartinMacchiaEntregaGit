@@ -1,0 +1,539 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding-top: 80px;
+}
+
+@font-face {
+  font-family: "logo";
+  src: url(../fonts/MochiyPopPOne-Regular.ttf);
+}
+@font-face {
+  font-family: "botones";
+  src: url(../fonts/FredokaOne-Regular.ttf);
+}
+
+a {
+  text-decoration: none;
+}
+
+.cabecera {
+  position: fixed;
+  box-shadow: 0 4px 5px #e5e5e5;
+  background-color: #283339;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  max-width: 980px;
+  margin: 0 auto;
+}
+/* LOGO */
+.logo {
+  font-family: "logo";
+  color: #f3a56e;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+/* MENU */
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 0 15px;
+}
+
+.menu li a {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+/* MENU END */
+
+/* SECTION PERFIL */
+.perfil {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  max-width: 980px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.perfil .perfil-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 400px;
+}
+
+.perfil .perfil-btn {
+  padding: 10px;
+  background-color: #f3a56e;
+  border-radius: 8px;
+  cursor: pointer;
+  border-color: #e2a87e;
+  font-family: "botones", "Arial";
+  font-size: 15px;
+  color: #fff;
+}
+
+.perfil-titulo {
+  color: #345d7e;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.perfil-detallado {
+  font-size: 20px;
+}
+.perfil-img {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  background-color: #cccccc;
+}
+
+/* SECTION PERFIL  END*/
+
+/* SECTION HABILIDADES*/
+
+.seccion-dos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.seccion-dos .titulo-habilidades {
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.habilidades {
+  display: flex;
+  justify-content: space-between;
+  max-width: 980px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.habilidades .habilidad {
+  width: 325px;
+  margin: 0 5px;
+}
+.habilidades .habilidad .titulo-habiludad {
+  text-align: center;
+}
+.habilidades .habilidad .habilidad-info {
+  text-align: center;
+}
+
+.habilidades .habilidad .habilidad-btn {
+  padding: 10px;
+  background-color: #f3a56e;
+  border-radius: 8px;
+  cursor: pointer;
+  border-color: #e2a87e;
+  font-family: "botones", "Arial";
+  font-size: 15px;
+  color: #fff;
+  width: 100%;
+}
+
+.habilidades .habilidad a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* SECTION HABILIDADES  END*/
+
+/* PORUQE TIENDA */
+.porquetienda {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 980px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  background-color: #345d7e;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.porquetienda .porquetienda-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 400px;
+}
+
+.porquetienda .porquetienda-info .porquetienda-titulo {
+  margin: 0 20px;
+}
+
+.porquetienda .porquetienda-info a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.porquetienda .porquetienda-btn {
+  padding: 10px;
+  background-color: #f3a56e;
+  border-radius: 8px;
+  cursor: pointer;
+  border-color: #e2a87e;
+  font-family: "botones", "Arial";
+  font-size: 15px;
+  color: #fff;
+  margin-left: 20px;
+}
+
+.porquetienda-titulo {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.porquetienda-detallado {
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.porquetienda-img {
+  margin-top: 35px;
+  margin-right: 30px;
+}
+
+/* PORQUE TIENDA END */
+
+/* CONTACTO */
+
+#main-form {
+  height: 100vh;
+}
+
+#main-form h1 {
+  font-family: "logo";
+  margin: 30px 0;
+}
+
+#main-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px 0;
+}
+
+#main-form form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin-bottom: 20px;
+}
+
+#main-form form label {
+  font-size: 20px;
+}
+
+#main-form form input {
+  width: 100%;
+  background: none;
+  color: #706c6c;
+  font-size: 20px;
+  padding: 20px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  font-family: "roboto";
+}
+
+#main-form form .contacto-btn {
+  padding: 10px;
+  background-color: #f3a56e;
+  border-radius: 8px;
+  cursor: pointer;
+  border-color: #e2a87e;
+  font-family: "botones", "Arial";
+  font-size: 15px;
+  color: #fff;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+/* CONTACTO END */
+
+/* PROYECTOS */
+.container-proyectos {
+  height: 100vh;
+}
+
+.seccion-proyectos {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 980px;
+}
+
+.container-proyectos {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.titulo-proyectos {
+  margin: 30px 0;
+}
+
+.div-proyecto {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+/* PROYECTOS END */
+
+/* PORQUEWEB */
+.container-servicios {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.container-servicios .maquetacion {
+  display: flex;
+  align-items: center;
+  width: 980px;
+  background-color: #48b4ee;
+  width: 50%;
+  height: 200px;
+  padding: 10px;
+}
+
+.container-servicios .javascrit {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  width: 980px;
+  background-color: #eee9a7;
+  width: 50%;
+  height: 200px;
+  padding: 10px;
+}
+
+.container-servicios .react {
+  display: flex;
+  align-items: center;
+  width: 980px;
+  background-color: #345d7e;
+  width: 50%;
+  height: 200px;
+  padding: 10px;
+}
+
+.container-servicios .info-maquetacion {
+  width: 70%;
+  margin-left: 40px;
+}
+.container-servicios .info-javascrit {
+  width: 70%;
+  margin-right: 40px;
+}
+
+.container-servicios .info-react {
+  width: 70%;
+  margin-left: 40px;
+}
+/* PORQUEWEB END */
+
+/* SOBREMI */
+
+.container-sobremi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container2-sobremi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+.container2-sobremi .info-sobreMi {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* SOBREMI END */
+
+/* FOOTER */
+
+.footer {
+  background-color: #ccc;
+  margin-bottom: 0px;
+}
+.footer-navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  font-family: "logo";
+  color: #f3a56e;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.footer-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-menu li {
+  padding: 0 15px;
+}
+
+.footer-menu li a {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+/* FOOTER END */
+
+/* RESPONSIVE */
+
+@media (max-width: 950px) {
+  body {
+    padding-top: 140px;
+  }
+  /* MENU */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    max-width: 980px;
+    margin: 0 auto;
+    flex-direction: column;
+    min-width: 400px;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+  }
+  .menu {
+    display: flex;
+    justify-content: center;
+  }
+  /* MENU END */
+
+  /* SECTION PERFIL */
+  .perfil {
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .perfil-img {
+  }
+
+  .perfil-info {
+    width: 80%;
+  }
+
+  .perfil .perfil-detallado {
+  }
+
+  .perfil .perfil-btn {
+    margin: 10px;
+    padding: 10px;
+    background-color: #f3a56e;
+    border-radius: 8px;
+    cursor: pointer;
+    border-color: #e2a87e;
+    font-family: "botones", "Arial";
+    font-size: 15px;
+    color: #fff;
+  }
+  /* SECTION PERFIL  END*/
+
+  /* SECTION HABILIDADES*/
+  .seccion-dos {
+    display: flex;
+    flex-direction: column;
+  }
+  .seccion-dos .habilidad {
+    margin-bottom: 10px;
+  }
+
+  .seccion-dos .habilidades {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* SECTION HABILIDADES END*/
+
+  /* PORQUE TIENDA  */
+  .porquetienda {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .porquetienda-img {
+  }
+
+  .porquetienda-info {
+    width: 80%;
+  }
+
+  .porquetienda .porquetienda-detallado {
+  }
+
+  .porquetienda .porquetienda-btn {
+    margin: 10px;
+    padding: 10px;
+    background-color: #f3a56e;
+    border-radius: 8px;
+    cursor: pointer;
+    border-color: #e2a87e;
+    font-family: "botones", "Arial";
+    font-size: 15px;
+    color: #fff;
+  }
+  /* PORQUE TIENDA END */
+}
