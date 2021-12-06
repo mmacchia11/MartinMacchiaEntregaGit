@@ -239,6 +239,7 @@ a {
 #main-form .titulo-contacto {
   text-align: center;
   font-weight: 700;
+  color: #e2a87e;
 }
 form {
   background: #fff;
@@ -259,7 +260,7 @@ form {
 
 input {
   background: none;
-  color: #c6c6c6;
+  color: #918f8f;
   font-size: 18px;
   padding: 10px 10px 10px 5px;
   display: block;
